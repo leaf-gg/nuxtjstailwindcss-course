@@ -1,7 +1,6 @@
 <template>
   <div>
-    <NavBar />
-    <Nuxt class="m-4" />
+    <p>Product code is: <strong>{{ $route.params.code }}</strong></p>
   </div>
 </template>
 
