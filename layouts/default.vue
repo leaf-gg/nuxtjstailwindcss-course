@@ -1,11 +1,16 @@
 <template>
   <div>
-    <h1 class="text-2xl text-center">Homepage</h1>
+    <NavBar />
+    <Nuxt />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+
 }
 </script>
+
+<style>
+
+</style>
