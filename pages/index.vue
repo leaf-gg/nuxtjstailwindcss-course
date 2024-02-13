@@ -7,5 +7,18 @@
 <script>
 export default {
   name: 'IndexPage',
+  head: {
+    htmlAttrs: {
+      lang : 'en',
+
+    },
+    meta: [
+      {
+        hid: 'description', name: 'description',
+        content: "Main app page"
+      },
+    ],
+    title: "Main"
+  }
 }
 </script>
