@@ -1,21 +1,29 @@
 <template>
-    <div class="border rounded-md bg-blue-300 justify-around flex p-4 font-bold">
-      <p>Logo</p>
-      <p class="ml-auto">
-        <nuxt-link to="/">Home</nuxt-link>
-        <nuxt-link to="/products">Products</nuxt-link>
-        <nuxt-link to="/about">About</nuxt-link>
-        <nuxt-link to="/login">Login</nuxt-link>
+  <div class="border rounded-md bg-blue-300 flex justify-around p-4 font-bold">
+    <Logo />
+    <AppMenu :options="options"/>
+    <p class="ml-auto">
+      <nuxt-link to="/login">Login</nuxt-link>
     </p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-  
+  </div>
+</template>
+
+<script>
+import Logo from '../common/Logo.vue'
+import AppMenu from '~/common/AppMenu.vue';
+export default {
+  components: { Logo, AppMenu },
+  data(){
+    return {
+      options: [
+        {text: 'Home', url: '/'},
+        {text: 'Products', url: '/products'},
+        {text: 'About', url: '/about'}
+
+      ]
+    }
   }
-  </script>
-  
-  <style>
-  
-  </style>
+}
+</script>
+
+<style></style>

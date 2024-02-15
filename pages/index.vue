@@ -9,16 +9,16 @@ export default {
   name: 'IndexPage',
   head: {
     htmlAttrs: {
-      lang : 'en',
-
+      lang: 'en',
     },
     meta: [
       {
-        hid: 'description', name: 'description',
-        content: "Main app page"
+        hid: 'description',
+        name: 'description',
+        content: 'Main app page',
       },
     ],
-    title: "Main"
-  }
+    title: 'Main',
+  },
 }
 </script>
