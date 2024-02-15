@@ -2,17 +2,17 @@
   <div class="border rounded-md bg-blue-300 flex justify-around p-4 font-bold">
     <Logo />
     <AppMenu :options="options"/>
-    <p class="ml-auto">
-      <nuxt-link to="/login">Login</nuxt-link>
-    </p>
+    <Profile />
   </div>
 </template>
 
 <script>
 import Logo from '../common/Logo.vue'
 import AppMenu from '~/common/AppMenu.vue';
+import Profile from '~/common/Profile.vue';
+
 export default {
-  components: { Logo, AppMenu },
+  components: { Logo, AppMenu, Profile },
   data(){
     return {
       options: [
